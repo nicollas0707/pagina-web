@@ -37,7 +37,17 @@
     <p>Boas-vindas ao meu blog! 
         aqui vou compartilhar dicas de programaçao e curiosidades da area de tecnologia </p>
         <p>por:Nicolas</p>
+        <button>🤍​ <span>0</span></button>
 </main>
 </body>
+<script>
+    const botao = document.querySelector("button");
+    botao.addEventListener("click",botaoclicado)
+    function botaoclicado(){
+        console.log("fui clicado");
+        let texto = botao.querySelector("span")
+        texto.textcontent++; 
+       }
+</script>
 </html>
 
